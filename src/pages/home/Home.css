@@ -1,0 +1,90 @@
+.home-container {
+  min-height: 100vh;
+  background-image: url(../../assets/home.svg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white
+}
+.home-container > * {
+  color: inherit
+}
+.services-container {
+  background-color: var(--grey-color-01);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 15px;
+  padding: 25px;
+  width: 100%;
+  max-width: 850px;
+}
+.services-container h2 {
+  font-weight: 600;
+}
+.services-container .services {
+  direction: ltr;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  place-items: center;
+  max-width: 810px;
+  max-height: 290px;
+  overflow-y: auto;
+}
+.services-container .services::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+.services-container .services::-webkit-scrollbar-thumb {
+  background-color: var(--grey-color-81);
+  box-shadow: inset 0 0 10px rgb(255, 255, 255);
+  border-radius: 100vw;
+  transition: 150ms ease;
+}
+.services-container .services .service {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.services-container .services .service .service-icon {
+  width: 60px;
+  height: 60px;
+  margin-inline: auto;
+}
+.services-container .services .service .service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.services-container .services .service .service-title {
+  font-size: 16px;
+}
+.statistics-container {
+  display: flex;
+  width: 100%;
+  max-width: 810px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.statistics-container .statistics-item {
+  text-align: center;
+}
+.statistics-container .statistics-item .statistics-item-title {
+  font-weight: 500;
+}
+.statistics-container .statistics-item .statistics-item-value {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1;
+}
+@media screen and (max-width: 500px) {
+  .services-container h2 {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,107 @@
+.login-section-container {
+  display: flex;
+  background-image: url(../../assets/login-page.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-section-container .login-right {
+  flex: 1.5;
+  background-image: url(../../assets/welcome-page.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-section-container .login-right img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.login-section-container .login-left {
+  flex: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: right;
+}
+.login-section-container .login-left h2 {
+  color: white;
+  font-weight: 600;
+}
+.login-section-container .login-left .form-login-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.login-section-container .login-left .form-login {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 15px;
+}
+.login-section-container .login-left .form-login > * {
+  width: 100%;
+}
+.login-section-container .login-left .form-login .input-container {
+  position: relative;
+}
+.login-section-container .login-left .form-login .input-container input {
+  width: 100%;
+}
+.login-section-container .login-left .form-login .input-container .person-icon {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section-container .login-left .form-login .input-container input,
+.login-section-container .login-left .form-login button {
+  padding: 5px 20px;
+  border-radius: 100vw;
+  outline: none;
+  border: none;
+}
+.login-section-container .login-left .form-login .input-container input {
+  text-indent: 7%;
+  font-size: 15px;
+  border: 1px solid var(--grey-color);
+}
+.login-section-container
+  .login-left
+  .form-login
+  .input-container
+  input::placeholder {
+  color: var(--grey-color);
+}
+.login-section-container .login-left .form-login button {
+  background-color: var(--light-blue);
+  color: var(--white-color-249);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.login-section-container .login-left .form-login button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-section-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .login-section-container .login-right {
+    display: none;
+  }  
+}

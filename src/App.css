@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: rgba(19, 56, 91, 1);
+  --grey-color: rgba(154, 153, 154, 1);
+  --white-color-249: rgba(249, 249, 249, 1);
+  --light-blue: rgba(51, 139, 192, 1);
+  --grey-color-01: rgba(217, 217, 217, 0.1);
+  --grey-color-81: rgba(217, 217, 217, 0.81);
+  --grey-color-1: rgba(217, 217, 217, 1);
+  --white-color: white;
+  --inner-menu-bg-color: rgba(181, 147, 27, 1);
+}
+body {
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.app-container {
+  position: relative;
+  min-height: 100vh;
+}
+.logo {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  z-index: 999;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.app-container footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(./assets/footer-bg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  font-size: 17px;
+  padding-top: 20px;
+}
+::-webkit-scrollbar {
+  width: 13px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  box-shadow: inset 0 0 10px rgb(255, 255, 255);
+  border-radius: 100vw;
+  transition: 150ms ease;
+}
